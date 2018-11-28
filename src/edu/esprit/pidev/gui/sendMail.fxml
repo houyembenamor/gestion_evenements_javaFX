@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="signup" prefHeight="539.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.gui.sendMailController">
+   <children>
+      <ImageView id="d" fitHeight="548.0" fitWidth="552.0" layoutY="-3.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../image/470149726.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="204.0" layoutY="61.0" text="Envoyer Mail" textFill="#ffe800">
+         <font>
+            <Font size="34.0" />
+         </font>
+         <effect>
+            <DropShadow height="65.48" radius="21.12" />
+         </effect>
+      </Label>
+      <GridPane layoutX="103.0" layoutY="117.0" prefHeight="314.0" prefWidth="398.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="82.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="157.0" minHeight="10.0" prefHeight="157.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="tfto" prefHeight="46.0" prefWidth="412.0" promptText="to">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font></TextField>
+            <TextField fx:id="tfsubject" prefHeight="41.0" prefWidth="383.0" promptText="subject" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="tfText" prefHeight="119.0" prefWidth="383.0" promptText="text" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnSignup" layoutX="220.0" layoutY="456.0" mnemonicParsing="false" onAction="#sendAction" prefHeight="36.0" prefWidth="129.0" text="Envoyer" textFill="#0009ff">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow color="#dd5a0e" height="68.44" radius="21.86" spread="0.05" />
+         </effect></Button>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

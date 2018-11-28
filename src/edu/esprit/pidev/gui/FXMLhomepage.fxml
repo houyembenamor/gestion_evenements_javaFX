@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" cache="true" focusTraversable="true" prefHeight="417.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.gui.FXMLhomepageController">
+   <children>
+      <ImageView fitHeight="417.0" fitWidth="772.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/AAEAAQAAAAAAAA2fAAAAJDE2MzRjMzQ3LTliYzctNDlkMS04MTg2LTU0NDViOTFhMDg1ZA.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="15.0" layoutY="162.0" mnemonicParsing="false" onAction="#ajouteraction" prefHeight="66.0" prefWidth="311.0" text="Ajouter Événement" textFill="#420dc9">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font></Button>
+      <Button layoutX="15.0" layoutY="289.0" mnemonicParsing="false" onAction="#consulterButtonAction" prefHeight="66.0" prefWidth="311.0" text="Consulter Promotion" textFill="#420dc9">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font></Button>
+      <Button fx:id="envoyerbtn" layoutX="426.0" layoutY="162.0" mnemonicParsing="false" onAction="#envoyerButtonAction" prefHeight="66.0" prefWidth="293.0" text="Envoyer Mail" textFill="#420dc9">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font></Button>
+      <Label graphicTextGap="0.0" layoutX="183.0" layoutY="22.0" prefHeight="54.0" prefWidth="389.0" text="Gestion Des Événement" textAlignment="CENTER" textFill="#460337">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="66.0" fitWidth="56.0" layoutX="14.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/depositphotos_67958139-stock-photo-round-button-add-friend.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="62.0" layoutX="440.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/email-clipart-email-clip-art-78.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="7.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/stock-vector-read-button-316771730.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="envoyersms_bttn" layoutX="446.0" layoutY="289.0" mnemonicParsing="false" onAction="#envoyersmsaction" prefHeight="66.0" prefWidth="277.0" text="Envoyer SMS" textFill="#420dc9">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="66.0" fitWidth="62.0" layoutX="446.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/index.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <DropShadow color="#650757" height="65.48" radius="21.12" spread="0.07" />
+   </effect>
+</AnchorPane>

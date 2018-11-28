@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="551.0" prefWidth="544.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.gui.SendsmsController">
+   <children>
+      <ImageView fitHeight="551.0" fitWidth="544.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/12485118-Les-m-dias-sociaux-ic-nes-texture-bulle-conversation-composition-forme-d-arri-re-plan-Fichier-vector-Banque-d'images.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="to_box" layoutX="160.0" layoutY="160.0" prefHeight="30.0" prefWidth="225.0" promptText="to">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="msg_box" layoutX="160.0" layoutY="218.0" prefHeight="153.0" prefWidth="225.0" promptText="message">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="181.0" layoutY="103.0" prefHeight="33.0" prefWidth="151.0" text="Envoyer SMS" textFill="#320202">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="sms_button" layoutX="203.0" layoutY="394.0" mnemonicParsing="false" onAction="#envoyersms" prefHeight="46.0" prefWidth="140.0" text="Envoyer">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <DropShadow color="#086105" height="92.16" radius="36.685" width="56.58" />
+   </effect>
+</AnchorPane>

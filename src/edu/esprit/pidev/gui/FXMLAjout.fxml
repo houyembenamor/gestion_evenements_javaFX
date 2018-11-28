@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="666.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.gui.FXMLAjouterController">
+   <children>
+      <ImageView fitHeight="668.0" fitWidth="917.0" layoutY="7.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../image/sac-a-provisions-de-vendredi-noir-et-modele-de-vente-d-39-etiquette-de-vente_7714-77.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_ajouterevenement" layoutX="690.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="49.0" prefWidth="214.0" text="Ajouter Événement" textAlignment="CENTER" textFill="#046875">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="nom_event_box" layoutX="697.0" layoutY="72.0" prefHeight="25.0" prefWidth="200.0">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="nom_event_label" layoutX="646.0" layoutY="74.0" prefHeight="20.0" prefWidth="53.0" text="NOM:" textAlignment="RIGHT" textFill="#046875">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="date_d_label" layoutX="596.0" layoutY="113.0" prefHeight="25.0" prefWidth="100.0" text="DATE DEBUT:" textFill="#046875">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="date_f_label" layoutX="618.0" layoutY="167.0" prefHeight="17.0" prefWidth="72.0" text="DATE FIN:" textFill="#046875">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="descrip_event_label" layoutX="600.0" layoutY="236.0" prefHeight="17.0" prefWidth="107.0" text="DESCRIPTION:" textFill="#046875">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="date_f_box" layoutX="697.0" layoutY="163.0" prefHeight="25.0" prefWidth="200.0" />
+      <DatePicker fx:id="date_d_box" layoutX="697.0" layoutY="113.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextArea fx:id="descrip_event_box" layoutX="707.0" layoutY="216.0" prefHeight="57.0" prefWidth="200.0" />
+      <TableView fx:id="evenement_tableview" layoutX="68.0" layoutY="457.0" prefHeight="213.0" prefWidth="803.0">
+        <columns>
+          <TableColumn fx:id="id_event_column" prefWidth="150.0" text="Id_event" />
+          <TableColumn fx:id="nom_event_column" prefWidth="150.0" text="Nom_event" />
+            <TableColumn fx:id="date_d_column" prefWidth="150.0" text="Date_debut" />
+            <TableColumn fx:id="date_f_column" prefWidth="150.0" text="Date_fin" />
+            <TableColumn fx:id="descrip_event_column" prefWidth="150.0" text="Descrip_event" />
+        </columns>
+         <effect>
+            <DropShadow color="#c30707" height="74.13" offsetX="0.7" offsetY="0.7" radius="18.092499999999998" width="0.24" />
+         </effect>
+      </TableView>
+      <Button fx:id="btn_afficherevenement" layoutX="286.0" layoutY="12.0" mnemonicParsing="false" onAction="#afficherButtonAction" prefHeight="57.0" prefWidth="242.0" text="Afficher Les Événements" textFill="#046875">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_supprimerevenement" layoutX="14.0" layoutY="135.0" mnemonicParsing="false" onAction="#supprimerButtonAction" prefHeight="57.0" prefWidth="242.0" text="Supprimer Événement" textFill="#046875">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_actualiserevenement" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#actualiserButtonAction" prefHeight="57.0" prefWidth="242.0" text="Actualiser" textFill="#046875">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="updatebtn" layoutX="296.0" layoutY="139.0" mnemonicParsing="false" onAction="#upaction" prefHeight="57.0" prefWidth="232.0" text="Modifier Événement" textFill="#046875">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="42.0" fitWidth="43.0" layoutX="686.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/sign-in.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="53.0" layoutX="296.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/edit-button_t.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="16.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/20825345-supprimer-le-bouton-rond-bleu-Banque-d'images.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="78.0" layoutX="16.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/actualiser.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="43.0" layoutX="286.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/stock-vector-read-button-316771730.jpg" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <DropShadow color="#146679" height="53.62" radius="18.155" spread="0.02" />
+   </effect>
+</AnchorPane>
